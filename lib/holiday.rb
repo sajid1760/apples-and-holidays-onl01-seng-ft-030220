@@ -82,8 +82,8 @@ def all_supplies_in_holidays(holiday_hash)
      holiday.each do |holiday2,supply|
        holidaystring = "#{holiday2}"
        holidaystring = holidaystring.gsub("_"," ").split.map(&:capitalize).join(' ')
-       puts holidaystring
-      # puts "  #{holiday2.gsub("_"," ")}: #{supply.join(", ")}" 
+      # puts holidaystring
+       puts "  #{holidaystring}: #{supply.join(", ")}" 
      end
   end
 end
